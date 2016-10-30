@@ -1,9 +1,0 @@
-Index,Name,Attack,MagicAttack,HP,Distance
-1,EntMage,50,150,1500,300
-2,EntWarrior,150,50,2000,100
-3,OgreShaman,30,120,1800,300
-4,OgreBerserk,200,10,1700,100
-5,OgreWarrior,140,20,2500,100
-6,GoblinArcher,130,30,1500,400
-7,GoblinShaman,30,180,1300,300
-8,GoblinWarrior,150,50,2000,100
