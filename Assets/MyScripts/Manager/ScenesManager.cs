@@ -33,11 +33,11 @@ public class ScenesManager : MonoBehaviour {
 		SceneManager.LoadScene (MenuName);
 	}
 
-	public void BattleSceneChange(string StageName)
-	{
-		SelectStageName = StageName;
-		//SceneManager.LoadScene ("BattleStage");
-	}
+//	public void BattleSceneChange(string StageName)
+//	{
+//		SelectStageName = StageName;
+//		//SceneManager.LoadScene ("BattleStage");
+//	}
 
 	public string SceneCheck()
 	{
@@ -50,6 +50,11 @@ public class ScenesManager : MonoBehaviour {
 		temp.m_DeckInfo = value;
 		CInfo [_index] = temp;
 		SortCharacter_Distance (value);
+	}
+
+	public string GetStageName()
+	{
+		return "1";
 	}
 
 
@@ -67,6 +72,8 @@ public class ScenesManager : MonoBehaviour {
 	}
 	private void SortCharacter_HP(List<CharData> Seltemp, List<CharData> NonSeltemp)
 	{
+		//SelectChar.Clear ();
+		//NonSelectChar.Clear ();
 		SelectChar = Seltemp.OrderByDescending (x => x.m_HP).ToList ();
 		NonSelectChar = NonSeltemp.OrderByDescending (x => x.m_HP).ToList ();
 	}

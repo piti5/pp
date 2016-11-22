@@ -47,6 +47,29 @@ public class LZItemSlot : MonoBehaviour {
 		}
 	}
 
+	public void SetEnemySlot(LZItemData itemData=null)
+	{
+		mItem = itemData;
+
+		if(icon == null)
+		{
+			icon = transform.GetChild(0).GetComponent<UISprite>();
+			//icon = transform.GetComponent<UISprite>();
+		}
+
+		if(itemData == null)
+		{
+			icon.enabled = false;
+			icon.transform.parent.GetComponent<UISprite> ().enabled = false;
+		}
+		else
+		{
+			icon.enabled = true;
+			icon.transform.parent.GetComponent<UISprite> ().enabled = true;
+			icon.spriteName = mItem.spriteName;
+		}
+	}
+
 	public void OnClick()
 	{
 		Calculate();   

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class DistanceSearch : MonoBehaviour {
 
-	private string ttag = "enemyAim";
-	private string ptag = "player";
+	private const string ttag = "enemyAim";
+	private const string ptag = "player";
 	public Transform target;
 
 	private float dist;

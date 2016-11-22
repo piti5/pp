@@ -24,7 +24,6 @@ public class GlobalMenuController : MonoBehaviour {
 	public void GlobalMenuSelect(GameObject _obj)
 	{
 		ScenesManager.Instance.SceneChange (_obj.name);
-		//UIEventListener.Get (_obj).onPress += UIManager.Instance.GlobalButton_OnPress;
 	}
 
 	private List<TweenPosition> Global_Menu = new List<TweenPosition> ();
